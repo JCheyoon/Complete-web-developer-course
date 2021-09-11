@@ -1,0 +1,403 @@
+<html>
+
+<head>
+
+    <title>BBC news copy</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, freesans, sans-serif;
+        }
+
+        #topbar {
+            box-sizing: border-box;
+            width: 1400px;
+            margin: 0 auto;
+            height: 40px;
+            padding: 0px;
+        }
+
+        #logo {
+            height: 80%;
+            float: left;
+            margin-right: 4px;
+            margin: 5px 4px 0 0;
+        }
+
+        .topbar-section {
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 100%;
+            margin: 0px 10px 0px 10px;
+            padding: 0px 20px 0px 10px;
+        }
+
+        #login {
+            height: 80%;
+            float: left;
+            padding: 0px;
+            margin: 3px 0 0px 8px;
+
+
+        }
+
+        #signin-text {
+            font-weight: bold;
+            font-size: 90%;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            margin-right: 50px;
+        }
+
+        .topbar-menu {
+
+            font-weight: bold;
+            font-size: 90%;
+            padding: 8px 0px 24px 13px;
+            height: 8px;
+
+        }
+
+        #morearrow {
+            width: 16px;
+            margin-left: 40px;
+        }
+
+        #search-box {
+            background-color: #e4e4e4;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px;
+            margin: 5px 0px 5px 10px;
+            float: left;
+
+        }
+
+        #search-glass {
+            height: 26px;
+            margin: 5px 0px 0px 0px;
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #menubar-container {
+            border-top: 1px solid #cccccc;
+            background-color: #BB1919;
+            width: 100%;
+            height: 80px;
+        }
+
+        #menubar {
+            width: 1400px;
+            margin: auto
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 2px;
+            float: left;
+
+        }
+
+        #local-news {
+            float: right;
+            color: white;
+            border: 1px #BB4545 solid;
+            width: 180px;
+            padding: 10px 5px 0 10px;
+            margin: 10px 10px 0 0;
+        }
+
+        #local-news a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+            bottom: 13px;
+        }
+
+        #local-news a:hover {
+            text-decoration: underline;
+        }
+
+        #local-news img {
+            height: 40px;
+            position: relative;
+            top: 2px;
+            left: 5px;
+        }
+
+        #menubar-container2 {
+            background-color: #A91717;
+            width: 100%;
+        }
+
+        #menubar2 {
+            width: 1400px;
+            margin: 0 auto 0 255px;
+            height: 35px;
+        }
+
+        #menubar2 a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            border-right: 1px solid #BB4545;
+            font-size: 15px;
+            position: relative;
+            top: 6px;
+        }
+
+        #menubar2 a:hover {
+            text-decoration: underline;
+        }
+
+        .no-border {
+            border: none !important;
+        }
+
+        #down-white {
+            height: 20%;
+            position: relative;
+            top: 6px;
+
+        }
+
+        #page-container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        #main-article {
+            float: left;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 20px;
+            margin-left: 5px;
+            border-bottom: 3px solid #A91717;
+            width: 45px;
+        }
+
+        h3 {
+            width: 550px;
+        }
+
+        h3 a {
+            color: black;
+            font-size: 26px;
+            text-decoration: none;
+
+        }
+
+        h3 a:hover {
+            color: #1167a8;
+            text-decoration: underline;
+        }
+
+        #article {
+            color: #5a5a5a;
+            width: 550px;
+        }
+
+        #article-img {
+            height: 18px;
+            position: relative;
+            top: 3px;
+
+        }
+
+        #ph {
+            font-size: 14px;
+            margin-top:5px;
+        }
+
+        #article a {
+            color: #5a5a5a;
+            text-decoration: none;
+            border-left: 1px solid #cccccc;
+            padding-left: 10px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        #article a:hover {
+            color: #1167a8;
+            text-decoration: underline;
+        }
+
+        #list {
+            color: black;
+            font-weight: bold;
+            padding: 0 0 10px 20px;
+        }
+
+        #list li {
+            margin-bottom: 5px;
+        }
+        #other-article{float:left;
+            width:260px;
+        padding-top:60px;}
+
+        #other-article2{float:left;
+            width:260px;
+        padding-top:5px;}
+
+        .pha {
+            color: #5a5a5a;
+            text-decoration: none;
+            border-left: 1px solid #cccccc;
+            padding-left: 10px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .pha:hover {
+            color: #1167a8;
+            text-decoration: underline;
+        }
+        h4{margin-top:10px;
+        margin-bottom:8px;}
+
+        h4 a {
+            color: black;
+            text-decoration: none;
+
+            
+        }
+
+        h4 a:hover {
+            color: #1167a8;
+            text-decoration: underline;
+        }
+
+        #other-p{margin-top:8px;
+            margin-bottom:8px;
+        font-size:15px;}
+    </style>
+</head>
+
+<body>
+
+    <div id="topbar">
+        <img id="logo" src="../images/bbc-logo.png">
+
+        <div id="signin-div" class="topbar-section">
+            <img id="login" src="../images/login.PNG"> <span id="signin-text">Sign in</span>
+        </div>
+        <div class="topbar-section topbar-menu">Home</div>
+        <div class="topbar-section topbar-menu">News</div>
+        <div class="topbar-section topbar-menu">Sport</div>
+        <div class="topbar-section topbar-menu">Reel</div>
+        <div class="topbar-section topbar-menu">Worklife</div>
+        <div class="topbar-section topbar-menu">Travel</div>
+        <div class="topbar-section topbar-menu">Future</div>
+        <div class="topbar-section topbar-menu">More
+            <img id="morearrow" src="../images/arrowndown.PNG">
+        </div>
+        <div class="topbar-section">
+            <input id="search-box" type="text" value="Search">
+            <input type="image" img id="search-glass" src="../images/search.PNG">
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <div id="menubar-container">
+        <div id="menubar">
+            <h1>NEWS</h1>
+            <div id="local-news"><a href="">Find local news</a> <img id="local-news img" src="../images/location.png">
+            </div>
+        </div>
+    </div>
+    <div id="menubar-container2">
+
+        <div id=menubar2>
+            <a href="">Home</a>
+            <a href="">Coronavirus</a>
+            <a href="">Video</a>
+            <a href="">World</a>
+            <a href="">UK</a>
+            <a href="">Business</a>
+            <a href="">Tech</a>
+            <a href="">Science</a>
+            <a href="">Stories</a>
+            <a href="">Entertainment & Arts</a>
+            <a href="">Health</a>
+            <a href="">World News TV</a>
+            <a href="">In pictures</a>
+            <a href="">Reality Check</a>
+            <a href="" class="no-border">More</a> <img id="down-white" src="../images/arrowndown-white.png">
+
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <div id="page-container">
+        <div id="main-article">
+            <h2>Tech</h2>
+            <img src="../images/Blizzard.png">
+            <h3><a href="">Blizzard Entertainment president steps down</a></h3>
+            <div id="article">
+                <p>J Allen Brack quits the call of Duty and Warcraft game-maker, amid staff protests and allegations of
+                    a sexist workplace culture</p>
+                <P id="ph"><img id="article-img" src="../images/clock.PNG">18h <a href="">Technology</a></P>
+                <ul id="list">
+                    <li>The perfect storm striking world of warcarft</li>
+                    <li>Activision staff walk out over harassment claims </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id=other-article>
+            <img src="../images/a1.PNG">
+            <h4><a href="">China Tesla rival plans Hong Kong secondary listhing</a></h4>
+            <p id="other-p">The move comes as Chinese firms listed in the US face increasing scrutiny bt Beijing and Washington.</p>
+            <P id="ph"><img id="article-img" src="../images/clock.PNG">7h <a class="pha" href="">Business</a></P>
+        </div>
+        <div id=other-article>
+            <img src="../images/a2.PNG">
+            <h4><a href="">Meng Wanzhou: Final arguments in extradition battle</a></h4>
+            <p id="other-p">Huawei's chief financial officer is due in court as a Canadian judge weighs her extradition to the US.</p>
+            <P id="ph"><img id="article-img" src="../images/clock.PNG">7h <a class="pha" href="">Technologt</a></P>
+        </div>
+        <div id=other-article>
+            <img src="../images/a3.PNG">
+            <h4><a href="">Official recommends rerun in Amazon union fight</a></h4>
+            <p id="other-p">A National Labor Relations Board official wants another union vote for Amazon workers in Alabama.</p>
+            <P id="ph"><img id="article-img" src="../images/clock.PNG">1d <a class="pha" href="">Technology</a></P>
+        </div>
+        <div id=other-article2>
+            <img src="../images/a4.PNG">
+            <h4><a href="">Twitter works with news sites to tackle disinformation</a></h4>
+            <p id="other-p">Twitter announces it will cooperate with two news agencies to promote more reliable information.</p>
+            <P id="ph"><img id="article-img" src="../images/clock.PNG">1d <a class="pha" href="">Business</a></P>
+        </div>
+        <div id=other-article2>
+            <img src="../images/a5.PNG">
+            <h4><a href="">China brands online games as 'electronic drugs'</a></h4>
+            <p id="other-p">In recent months Beijing has cracked down on China's technology and private education industries.</p>
+            <P id="ph"><img id="article-img" src="../images/clock.PNG">1d <a class="pha" href="">Business</a></P>
+        </div>
+        <div id=other-article2>
+            <img src="../images/a6.PNG">
+            <h4><a href="">Warship positions faked including UK carrier</a></h4>
+            <p id="other-p">Nearly 100 naval ships may have had their locations faked through manipulation of AIS safety system.</p>
+            <P id="ph"><img id="article-img" src="../images/clock.PNG">1d <a class="pha" href="">Technology</a></P>
+        </div>
+    </div>
+</body>
+
+</html>
